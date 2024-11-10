@@ -1,0 +1,30 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "build C++",
+			"type": "shell",
+			"command": "g++",
+			"args": [
+				"-g",
+				"${workspaceFolder}/src/lyric_buddy.cpp",
+				"-std=c++20",
+				"-lstdc++fs",
+				"D_GNU_SOURCE",
+				"-Wall",
+				"-lcurl",
+				"-ljsoncpp",
+				"-o",
+				"${workspaceFolder}/build/lyric_buddy"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"detail": "Written with utter confusion by Viihna"
+		}
+	]
+}

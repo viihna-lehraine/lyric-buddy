@@ -1,0 +1,5 @@
+creation_rules:
+  - path_regex: secrets\.sops\.json$ 
+    key_groups:
+      - pgp:
+        - B5BC332A603B022E21E46F2DA18BAE412BC0A77C
